@@ -43,15 +43,13 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/esp32/': [
         {
-          title: 'Inhoud',
+          title: 'Intro ESP32',
           collapsable: false,
           children: [
             '',
-            'microbit',
-            'ai',
-            'ai_2',
+            
           ]
         }
       ],
