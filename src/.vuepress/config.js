@@ -45,12 +45,11 @@ module.exports = {
     sidebar: {
       '/esp32/': [
         {
-          title: 'Intro ESP32',
+          title: 'Intro_ESP32',
           collapsable: false,
           children: [
             '',
-            'README',
-            
+                        
           ]
         }
       ],
