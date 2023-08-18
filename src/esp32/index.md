@@ -1,11 +1,3 @@
----
-author: [Wim Dejonghe]
-description: [Korte intleiding esp32 - Huzzah.]
-ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
-marp: true
-title: [esp32 Huzzah]
----
-
 # esp32
 
 ![example image](./images/feather_pinouttop.jpg "An exemplary image")
