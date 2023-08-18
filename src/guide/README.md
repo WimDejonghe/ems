@@ -1,9 +1,10 @@
 # Introductie
 
-Dit project kwam tot stand door samenwerking van de provincie West-Vlaanderen (flankerende projecten) en de Wetenschapscommunicatie van de hogeschool VIVES te Kortrijk. Het project heeft tot doel om leerkrachten secundair onderwijs te helpen ondersteunen met kennis en wetenschappen omtrent moderne technologieën. Hier in het bijzonder is het de bedoeling om kennis en ervaring bij te brengen omtrent het gebruik van microcontrollers op software en hardware vlak. Daarnaast is het bedoeling de principes van artificiële intelligentie te verklaren en hoe hardware en software en microcontrollers kunnen aangewend worden binnen projecten die gebruik maken van artificiële intelligentie.  
+Dit is een cursus ter ondersteuning van het avondtraject EMS. 
 
-Door op een laagdrempelige manier hier kennis te verwerven is het de bedoeling dat leerkrachten deze kunnen aanwenden in hun STEM-projecten en op die manier jonge mensen (leerlingen) in aanraking laten komen met moderne technologieën waar de komende generatie op vele vlakken zal mee worden geconfronteerd. Het is niet dat AI veel jobs zal overnemen, maar wel dat AI zal moeten worden ondersteunt door mensen die kennis hebben van die nieuwe technologieën.
+Microcontrollers zijn de dag van vandaag niet meer weg te denken in allerhande toestellen, opstellingen en automatisatie. Het zijn kleine computers die in staat zijn om actuatoren aan te sturen en sensoren in te lezen. Op basis van de geprogrammeerde code kunnen er logische acties worden gekoppeld tussen sensoren en actuatoren.
 
+Door op een laagdrempelige manier hier kennis te verwerven is het de bedoeling dat de student inzicht krijgt in zowel de hardware en de software van eenvoudige opstellingen met processoren, sensoren en actuatoren. Hierbij worden verschillende technieken verduidelijkt. Het is aan de student om die kennis te verwerken in een eigen opdracht. 
 <hr>
 
 
