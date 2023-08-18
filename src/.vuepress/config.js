@@ -46,7 +46,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'index',
+            './esp32/index',
                       
           ]
         }
