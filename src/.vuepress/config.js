@@ -46,6 +46,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            'index',
                       
           ]
         }
