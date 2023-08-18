@@ -33,10 +33,7 @@ module.exports = {
     editLinkText: '',
     lastUpdated: false,
     nav: [
-      {
-        text: 'Inhoud',
-        link: '/esp32/',
-      },
+      
       {
         text: 'Vives',
         link: 'https://www.vives.be'
@@ -45,7 +42,7 @@ module.exports = {
     sidebar: {
       '/esp32/': [
         {
-          title: 'Intro_ESP32',
+          title: 'Intro',
           collapsable: false,
           children: [
             '',
