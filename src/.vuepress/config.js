@@ -35,7 +35,7 @@ module.exports = {
     nav: [
       {
         text: 'Inhoud',
-        link: '/guide/',
+        link: '/esp32/',
       },
       {
         text: 'Vives',
@@ -49,7 +49,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'index.md',            
+            'index',            
           ]
         }
       ],
