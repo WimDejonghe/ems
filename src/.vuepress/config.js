@@ -42,7 +42,7 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'Intro',
+          title: 'ESP32',
           collapsable: false,
           children: [
             '',
