@@ -45,7 +45,7 @@ module.exports = {
       [
         {
           title: 'ESP32 : Intro',
-          collapsable: false,
+          collapsable: true,
           children: [
             '',
             'intro/test',
@@ -61,7 +61,7 @@ module.exports = {
 
         {
           title: 'ESP32 : Hardware & software',
-          collapsable: false,
+          collapsable: true,
           children: [
             
             'intro/test',
