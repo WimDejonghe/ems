@@ -46,7 +46,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'intro/esp32',
+            'intro/test',
                 
           ]
         }
