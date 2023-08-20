@@ -43,13 +43,13 @@ module.exports = {
       }
     ],
     sidebar: {
-      '': [
+      '/pag/': [
         {
           title: 'Intro',
           collapsable: false,
           children: [
             '',
-            'README',
+            'test',
                 
           ]
         }
