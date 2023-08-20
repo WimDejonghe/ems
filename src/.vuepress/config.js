@@ -39,8 +39,26 @@ module.exports = {
         link: 'https://www.vives.be'
       }
     ],
-    sidebar: {
-      '/guide/': [
+    sidebar: 
+    {
+      '/guide/': 
+      [
+        {
+          title: 'ESP32',
+          collapsable: false,
+          children: [
+            '',
+            'intro/test',
+            'part1/test',
+            'part2/test',
+            'part3/test',
+            'part4/test',
+            'part5/test',
+            'part6/test',
+                
+          ]
+        },
+
         {
           title: 'ESP32',
           collapsable: false,
@@ -56,9 +74,11 @@ module.exports = {
                 
           ]
         }
-      ],
+      ],      
     }
   },
+
+  
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
