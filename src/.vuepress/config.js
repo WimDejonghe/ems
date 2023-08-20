@@ -97,7 +97,7 @@ module.exports = {
           ]
         },
         {
-          title: 'ESP32 : PWM',
+          title: 'ESP32 : GPIO - PWM',
           collapsable: true,
           children: [
             'part6/test',
