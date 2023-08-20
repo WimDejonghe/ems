@@ -49,7 +49,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            '/pag/README',
+            'README',
                 
           ]
         }
