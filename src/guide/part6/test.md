@@ -15,7 +15,32 @@ Een kan dus als een uitgang (output) worden ingesteld in de software. Hierdoor k
 
 De meest eenvoudige actuator die kan aangestuurd worden met een digitale ouput pin is een LED.
 
-Een LED is een diode met twee aansluitklemmen (Anode en Kathode) *******************************
+Een LED is een diode met twee aansluitklemmen (Anode en Kathode) .
+
+Op een breadboard kan dan via draadjes verbindingen en schakelingen worden gebouwd. 
+
+![example image](./images/vtbb3.jpg "Breadboard")
+
+De doorverbindingen van het breadboard ziet er als volgt uit:
+
+![example image](./images/bb1.png "Doorverbindingen breadboard")
+
+### Een verkeerslicht bouwen
+
+Om een verkeerslicht te maken worden de drie uitgangen van de Micro:Bit gebruikt.
+
+![example image](./images/leds.png "Bedradingsdschema van verkeerslicht")
+
+Bij het bouwen van de schakeling moet je weten dat een led een positieve aansluiting (=anode)
+heeft en een negatieve aansluiting (=kathode). De Anode moet verbonden worden met de weerstanden.
+De aansluiting van de anode is langer dan de aansluiting van de kathode.
+De weerstanden hebben een waarde van 150Ω (=150 Ohm), 120Ω en 39Ω. Dit kan je zien aan de 4
+gekleurde bandjes waarvan de eerste drie banden de waarde voorstellen.
+De weerstandswaarde van de weerstand verbonden met de rode led is 150Ω (bruin, groen, bruin).
+De weerstandswaarde van de weerstand verbonden met de gele led is 39Ω (oranje, wit, zwart).
+De weerstandswaarde van de weerstand verbonden met de groene led is 120Ω (bruin, rood, bruin).
+
+De python code om een knipperled te programmeren ziet er als volgt uit (hier is de externe LED is aangesloten op pin1):
 
 ## Digitale input
 
