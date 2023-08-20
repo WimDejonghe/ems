@@ -47,6 +47,7 @@ module.exports = {
           children: [
             '',
             'intro/test',
+            'part1/test',
                 
           ]
         }
