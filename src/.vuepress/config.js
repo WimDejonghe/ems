@@ -33,23 +33,20 @@ module.exports = {
     editLinkText: '',
     lastUpdated: false,
     nav: [
-      {
-        text: 'Vives',
-        link: 'https://www.vives.be'
-      },
+
       {
         text: 'Vives',
         link: 'https://www.vives.be'
       }
     ],
     sidebar: {
-      '/pag/': [
+      '/guide/': [
         {
           title: 'Intro',
           collapsable: false,
           children: [
             '',
-            'test',
+            'intro/esp32',
                 
           ]
         }
