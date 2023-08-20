@@ -48,6 +48,9 @@ module.exports = {
             '',
             'intro/test',
             'part1/test',
+            'part2/test',
+            'part3/test',
+            'part4/test',
                 
           ]
         }
