@@ -44,34 +44,63 @@ module.exports = {
       '/guide/': 
       [
         {
-          title: 'ESP32 : Intro',
+          title: 'Introductie',
           collapsable: true,
           children: [
             '',
-            'intro/test',
-            'part1/test',
-            'part2/test',
-            'part3/test',
-            'part4/test',
-            'part5/test',
-            'part6/test',
-                
+   
           ]
         },
 
         {
-          title: 'ESP32 : Hardware & software',
+          title: 'ESP32 : Inleiding',
           collapsable: true,
           children: [
             
             'intro/test',
+   
+          ]
+        },
+        {
+          title: 'ESP32 : Hardware & Software',
+          collapsable: true,
+          children: [
             'part1/test',
+          ]
+        },
+        {
+          title: 'ESP32 : Software',
+          collapsable: true,
+          children: [
             'part2/test',
+          ]
+        },
+        {
+          title: 'ESP32 : Extra Library',
+          collapsable: true,
+          children: [
             'part3/test',
+          ]
+        },
+        {
+          title: 'ESP32 : Hardware',
+          collapsable: true,
+          children: [
             'part4/test',
+          ]
+        },
+        {
+          title: 'ESP32 : Power management',
+          collapsable: true,
+          children: [
             'part5/test',
+          ]
+        },
+        {
+          title: 'ESP32 : PWM',
+          collapsable: true,
+          children: [
             'part6/test',
-                
           ]
         }
       ],      
