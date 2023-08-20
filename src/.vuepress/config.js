@@ -51,6 +51,8 @@ module.exports = {
             'part2/test',
             'part3/test',
             'part4/test',
+            'part5/test',
+            'part6/test',
                 
           ]
         }
