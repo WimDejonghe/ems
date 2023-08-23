@@ -53,7 +53,7 @@ module.exports = {
         },
 
         {
-          title: 'ESP32 : Inleiding',
+          title: 'ESP 32 : Inleiding',
           collapsable: true,
           children: [
             
@@ -62,42 +62,42 @@ module.exports = {
           ]
         },
         {
-          title: 'ESP32 : Install Software',
+          title: 'Install Software',
           collapsable: true,
           children: [
             'part1/test',
           ]
         },
         {
-          title: 'ESP32 : Software IDE',
+          title: 'Software IDE',
           collapsable: true,
           children: [
             'part2/test',
           ]
         },
         {
-          title: 'ESP32 : Extra Library',
+          title: 'Extra Library',
           collapsable: true,
           children: [
             'part3/test',
           ]
         },
         {
-          title: 'ESP32 : Hardware',
+          title: 'Hardware',
           collapsable: true,
           children: [
             'part4/test',
           ]
         },
         {
-          title: 'ESP32 : Power management',
+          title: 'Power management',
           collapsable: true,
           children: [
             'part5/test',
           ]
         },
         {
-          title: 'ESP32 : GPIO - PWM',
+          title: 'GPIO - PWM',
           collapsable: true,
           children: [
             'part6/test',
