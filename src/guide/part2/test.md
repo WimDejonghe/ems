@@ -2,7 +2,7 @@
 
 Om nu met het geheel te werk te gaan (schrijven van code, compileren en uploaden naar de microcontroller) wordt nu vertrokken vanuit een klassiek voorbeeld om tot een knipperende LED te komen (blinking LED).
 
-# Create a New Project
+## Create a New Project
 
 in VSC, klik op het icoon van PIO en klik op New Project om een nieuw project te starten:
 
@@ -49,7 +49,7 @@ De src-map is uw werkmap. Onder de src-map bevindt zich een main.cpp-bestand. Da
 
 In PlatformIO moeten alle Arduino sketches (een project wordt in de Arduino een sketch genoemd) bovenaan in de code straten met het aanroepen van de Arduino bibliotheek door volgend statement **#include <Arduino.h>**.
 
-# Uploading Code met PlatformIO IDE: ESP32/ESP8266
+## Uploading Code met PlatformIO IDE: ESP32/ESP8266
 
 Schrijf volgende code in de main.cpp
 

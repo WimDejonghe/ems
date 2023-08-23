@@ -6,7 +6,7 @@ De esp32 bezit dus een aantal GPIO (General Purpose Input Output) pinnen. Deze p
 > - Een ingang zal gebruikt worden om door de microcontroller te worden gelezen, hierop zal dus één of andere vorm van sensor of detector worden aangesloten. Meest eenvoudige vorm van zoiets is een drukknop.
 > - Een uitgang zal gebruikt worden om door de microcontroller te worden aangestuurd, hierop zal dus één of andere vorm van actuator worden aangesloten. Meest eenvoudige vorm van zoiets is een LED.
 
-# Digitale ouput
+## Digitale ouput
 
 Een kan dus als een uitgang (output) worden ingesteld in de software. Hierdoor kan de software dan die pin logisch 0 of logisch 1 aansturen. 
 
@@ -25,7 +25,7 @@ De doorverbindingen van het breadboard ziet er als volgt uit:
 
 ![example image](./images/bb1.png "Doorverbindingen breadboard")
 
-## Een verkeerslicht bouwen
+### Een verkeerslicht bouwen
 
 Om een verkeerslicht te maken worden de drie uitgangen van de Micro:Bit gebruikt.
 
@@ -42,7 +42,7 @@ De weerstandswaarde van de weerstand verbonden met de groene led is 120Ω (bruin
 
 De python code om een knipperled te programmeren ziet er als volgt uit (hier is de externe LED is aangesloten op pin1):
 
-# Digitale input
+## Digitale input
 
 > - Een logische 0 wordt op een digitale input gelezen als er op die pin een spanning wordt aangeboden van 0V.
 > - Een logische 1 wordt op een digitale input gelezen als er op die pin een spanning wordt aangeboden van 3,3V (= voedingsspanning van de microcontroller)
@@ -57,5 +57,5 @@ Een drukknop werkt op het principe van het 'maken van een contact' of 'het verbr
 
 
 
-# PWM
+## PWM
 De ESP32 LED PWM-controller heeft 16 onafhankelijke kanalen die kunnen worden geconfigureerd om PWM-signalen met verschillende eigenschappen te genereren. Alle pinnen die als uitgangen kunnen dienen, kunnen worden gebruikt als PWM-pinnen (GPIO's 34 tot 39 kunnen geen PWM genereren). Hiervoor kan de AnalogWrite (Arduino) worden gebruikt of het ledc-statement (bezit meer mogelijkheden dan analogWrite).

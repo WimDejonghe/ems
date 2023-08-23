@@ -44,7 +44,7 @@ Aan de linkerzijde van het scherm van VSC moet het icoontje zichtbaar zijn, en i
 
 Voila, VSC is volledig klaar. Wil je andere hardware of software ontwikkelingen doen binnen VSC, dan zal daarvoor andere Extensions aan VSC moeten worden toegevoegd. Indien er icoontjes zouden ontbreken, herstart dan VSC (het is aangewezen om VSC sowieso te herstarten na installatie en toevoeging van Extensions).
 
-### Quick overview VSC en PIO
+## Quick overview VSC en PIO
 
 Verduidelijking van icoontjes en shortcuts voor :
 
