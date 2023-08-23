@@ -10,7 +10,7 @@ Met de onderkant :
 
 ![example image](./images/esp32_2.jpg "An exemplary image")
 
-## Power pins
+# Power pins
 
 ![example image](./images/esp32_3.jpg "An exemplary image")
 
@@ -20,14 +20,14 @@ Met de onderkant :
 > * **EN** - dit is de activeringspin van de 3.3V-regelaar. Het is omhoog getrokken (pulled-up), dus maak verbinding met aarde om de 3.3V-regelaar uit te schakelen.
 > * **3V** - dit is de output van de 3.3V-regelaar. De regelaar kan een piek van 500 mA leveren, maar de helft daarvan wordt getrokken door de ESP32, en het is een behoorlijk stroomverslindende chip. Dus als je veel stroom nodig hebt voor dingen zoals LED's, motoren, enz. Gebruik dan de USB- of BAT-pinnen en een extra regelaar.
 
-## Logische (digitale) pinnen : GPIO
+# Logische (digitale) pinnen : GPIO
 
 Dit is de algemene I/O-pinset voor de microcontroller. Alle logica is 3.3V!!
 
 > **Warning**
 > De ESP32 werkt op 3,3V  : tenzij anders aangegeven, zijn GPIO-pinnen niet 5V veilig (no 5V tolerant)!.
 
-## Serial pins
+# Serial pins
 
 RX en TX zijn de extra Serial-pinnen en zijn niet aangesloten op de USB/Serial-converter. Dat betekent dat je ze kunt gebruiken om verbinding te maken met UART-apparaten zoals GPS's, vingerafdruksensoren, enz.
 
@@ -35,7 +35,7 @@ RX en TX zijn de extra Serial-pinnen en zijn niet aangesloten op de USB/Serial-c
 
 De TX-pin is de uitgang van de module. De RX-pin is de ingang in de module. Beide zijn 3.3V logica.
 
-## I²C & SPI pins
+# I²C & SPI pins
 
 Je kunt de ESP32 gebruiken om I2C- en SPI-apparaten, sensoren, uitgangen, enz. te besturen. Bij gebruik met Arduino werken de standaard Wire- en SPI-apparaten zoals je zou verwachten!
 
@@ -43,7 +43,7 @@ Je kunt de ESP32 gebruiken om I2C- en SPI-apparaten, sensoren, uitgangen, enz. t
 
 Merk op dat de I2C-pinnen nog geen pullup-weerstanden hebben! Je moet ze toevoegen als je wilt communiceren met een I2C-apparaat.
 
-## GPIO & analoge pins
+# GPIO & analoge pins
 
 ![example image](./images/esp32_6.jpg "An exemplary image")
 

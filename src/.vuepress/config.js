@@ -62,14 +62,14 @@ module.exports = {
           ]
         },
         {
-          title: 'ESP32 : Hardware & Software',
+          title: 'ESP32 : Install Software',
           collapsable: true,
           children: [
             'part1/test',
           ]
         },
         {
-          title: 'ESP32 : Software',
+          title: 'ESP32 : Software IDE',
           collapsable: true,
           children: [
             'part2/test',
