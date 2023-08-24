@@ -95,6 +95,13 @@ module.exports = {
           children: [
             'part5/test',
           ]
+        },
+        {
+          title: 'Power management',
+          collapsable: true,
+          children: [
+            'part6/test',
+          ]
         }
       ],      
     }
