@@ -97,7 +97,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Power management',
+          title: 'General Purpose IO pinnen',
           collapsable: true,
           children: [
             'part6/test',
