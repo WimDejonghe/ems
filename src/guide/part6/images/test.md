@@ -32,72 +32,12 @@ De termen ‘logisch 0’ en ‘logisch 1’ worden meestal afgekort naar ‘0�
 
 Wij gebruiken de huzzah32 feather van Adafruit zoals in volgende figuur is weergegeven.
 
-![example image](./images/vsc_28.png "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
+![example image](./images/vsc_28.png "An exemplary image")
 
-![example image](./images/feather_pinouttop.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
+![example image](./images/feather_pinouttop.jpg "An exemplary image")
 
-![example image](./images/esp32_2.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
+![example image](./images/esp32_2.jpg "An exemplary image")
 
-
-Enkel de pinnen met de gele labels zoals in Figuur 183 kunnen als digitale uitgangen gebruikt worden, behalve pin 34, 39 en 36 niet. Het maximum aantal is dus 18.
-Het ontwikkelbord heeft 2 leds aanwezig waarbij de led boven de USB-connecter en naast de aansluiting van de battreij verbonden is met IO-pin 13. Deze kunnen we aansturen van uit de code en kan ingesteld worden als uitgang (1).
-De led onder de USB-connector (2) knippert vanaf dat er voedingsspanning aanwezig is.
-
-![example image](./images/onboardled.png "De Leds op de ESP32 Huzzah")
-
-::: warning
-Zorg er altijd voor dat je geen actoren rechtstreeks op een IO-pin van de ESP32 aansluit die een stroom moet sourcen (leveren) die hoger is dan 40mA of een stroom moet sinken (afleiden naar massa) die hoger is dan 20mA.
-:::
-
-## pinMode
-
-Als men een IO-pin als uitgang wil gebruiken moet men de pinMode van de IO-pin instellen als uitgang zoals in volgende figuur. Het is het gemakkelijkst om hier de gele pinbenaming te gebruiken zoals in bovenste figuur.
-De pinMode van de IO-pin stel je in bij opstart van de controller en dit gebeurt in de setup-methode (instructie moet slechts één keer worden uitgevoerd, vanaf dan weet de µC dat deze pin een OUTPUT is).
-Aan de functie *pinMode* worden er twee parameters meegegeven tussen haakjes. De eerste parameter is de IO-pin waarover het gaat en de tweede parameter is hoe deze ingesteld moet worden, hier is dit als uitgang. De instructie wordt afgesloten met een puntkomma.
-
-```cpp
-void setup()
-{
-    pinMode(13, OUTPUT);
-}
-```
-
-Een goede programmeur zal een duidelijker naam willen voor de uitgang en zo weinig mogelijk gebruik maken van de IO-nummers. Daarom gaat men gebruik maken van constanten. De constanten declareert men voor de setup routine in het begin van het programma.
-Op lijn 3 is te zien dat de constante de naam ‘LED’ heeft en dat er 13 wordt toegewezen. ‘# define’ geeft weer dat LED gelijk staat aan 13. In de code wordt bij het compileren overal LED vervangen door 13.
-
-```cpp
-# define LED 13
-void setup()
-{
-    pinMode(LED, OUTPUT);
-}
-```
-
-## digitalWrite
-
-Een digitale uitgang kan twee waarden aannemen. In de volgende figuur zijn een aantal mogelijkheden om een digitale uitgang een waarde de te geven.
-Als de uitgang laag, 0 of als false wordt ingesteld, dan wordt er een 0V spanning op de desbetreffende pin geplaatst (door de inwendige elektronica van de µC).
-Als de uitgang hoog, 1 of als true wordt ingesteld dan wordt er een spanning gelijk aan de voedingsspanning op de pin geplaatst. Bij de EPS32 is dit een spanning van 3,3V.
-De methode digitalWrite heeft twee parameters die moeten worden meegegeven tussen haakjes. De eerste parameter is de IO-pin waarover het gaat. Hier is dit *LED* die aangesloten is op IO-pin 13. De tweede parameter is de waarde van de uitgang. Bijvoorbeeld LOW, HIGH, … . De instructie wordt afgesloten met een puntkomma.
-
-```cpp
-# define LED 13
-void setup()
-{
-    pinMode(LED, OUTPUT);
-}
-void loop()
-{
-    //Mogelijkheid om een uitgang laag te maken
-    digitalWrite(LED, LOW);
-    digitalWrite(LED, false);
-    digitalWrite(LED, 0);
-    //Mogelijkheid om een uitgang hoog te maken
-    digitalWrite(LED, HIGH);
-    digitalWrite(LED, true);
-    digitalWrite(LED, 1);
-}
-```
 
 
 
