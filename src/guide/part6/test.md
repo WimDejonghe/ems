@@ -32,18 +32,18 @@ De termen ‘logisch 0’ en ‘logisch 1’ worden meestal afgekort naar ‘0�
 
 Wij gebruiken de huzzah32 feather van Adafruit zoals in volgende figuur is weergegeven.
 
-![example image](./images/vsc_28.png "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
+[example image](./images/vsc_28.png "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
 
-![example image](./images/feather_pinouttop.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
+[example image](./images/feather_pinouttop.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
 
-![example image](./images/esp32_2.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
+[example image](./images/esp32_2.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
 
 
 Enkel de pinnen met de gele labels zoals in bovenste figuur kunnen als digitale uitgangen gebruikt worden, behalve pin 34, 39 en 36 niet. Het maximum aantal is dus 18.
 Het ontwikkelbord heeft 2 leds aanwezig waarbij de led boven de USB-connecter en naast de aansluiting van de battreij verbonden is met IO-pin 13. Deze kunnen we aansturen van uit de code en kan ingesteld worden als uitgang (1).
 De led onder de USB-connector (2) knippert vanaf dat er voedingsspanning aanwezig is.
 
-![example image](./images/onboardled.png "De Leds op de ESP32 Huzzah")
+[example image](./images/onboardled.png "De Leds op de ESP32 Huzzah")
 
 ::: warning
 Zorg er altijd voor dat je geen actoren rechtstreeks op een IO-pin van de ESP32 aansluit die een stroom moet sourcen (leveren) die hoger is dan 40mA of een stroom moet sinken (afleiden naar massa) die hoger is dan 20mA.
@@ -107,17 +107,17 @@ Een LED is een diode met twee aansluitklemmen (Anode en Kathode) .
 
 Op een breadboard kan dan via draadjes verbindingen en schakelingen worden gebouwd. 
 
-![example image](./images/vtbb3.jpg "Breadboard")
+[example image](./images/vtbb3.jpg "Breadboard")
 
 De doorverbindingen van het breadboard ziet er als volgt uit:
 
-![example image](./images/bb1.png "Doorverbindingen breadboard")
+[example image](./images/bb1.png "Doorverbindingen breadboard")
 
 ### Een verkeerslicht bouwen
 
 Om een verkeerslicht te maken worden de drie uitgangen van de Micro:Bit gebruikt.
 
-![example image](./images/leds.png "Bedradingsdschema van verkeerslicht")
+[example image](./images/leds.png "Bedradingsdschema van verkeerslicht")
 
 Bij het bouwen van de schakeling moet je weten dat een led een positieve aansluiting (=anode)
 heeft en een negatieve aansluiting (=kathode). De Anode moet verbonden worden met de weerstanden.
