@@ -158,6 +158,7 @@ Als de stroom groter zal zijn dan 40mA bij de ESP32, dan zal de uitgang van de c
 Het schema is te zien in de volgende figuur. In het schema wordt er een weerstand gebruikt van 220Ω.
 Gemiddeld staat er over een rode led een spanning van ongeveer 1,6V. Dits wil zeggen dat er over de weerstand een spanning staat van:
 
+Euler's identity $e^{i\pi}+1=0$ is a beautiful formula in $\mathbb{R}^2$.
 
 ### Een verkeerslicht bouwen
 
