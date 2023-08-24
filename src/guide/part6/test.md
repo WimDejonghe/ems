@@ -163,7 +163,7 @@ Euler's identity $e^{i\pi}+1=0$ is a beautiful formula in $\mathbb{R}^2$.
 $U_R = 𝑉𝑜𝑒𝑑𝑖𝑛𝑔𝑠𝑠𝑝𝑎𝑛𝑛𝑖𝑛𝑔 − 𝑈_{LED} = 3,3V - 1,6V = 1,7V $
 
 De stroom door de weerstand is dan:
-$$I = \frac{U_R} {R} = \frac{1,7V} {220\Omega}  $$
+$I = \frac{U_R} {R} = \frac{1,7V} {220\Omega}$
 
 
 ### Een verkeerslicht bouwen
