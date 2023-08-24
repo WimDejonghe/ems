@@ -95,13 +95,6 @@ module.exports = {
           children: [
             'part5/test',
           ]
-        },
-        {
-          title: 'GPIO - PWM',
-          collapsable: true,
-          children: [
-            'part6/test',
-          ]
         }
       ],      
     }
