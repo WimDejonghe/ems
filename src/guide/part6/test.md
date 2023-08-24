@@ -1,3 +1,8 @@
+---
+mathjax:
+  presets: '\def\lr#1#2#3{\left#1#2\right#3}'
+---
+
 # GPIO
 
 De esp32 bezit dus een aantal GPIO (General Purpose Input Output) pinnen. Deze pinnen kunnen gebruikt worden als digitale in- of output. Bij een input kan een digitale toestand (0 of 1) worden gelezen door de microcontroller. 
@@ -40,6 +45,9 @@ Wij gebruiken de huzzah32 feather van Adafruit zoals in volgende figuur is weerg
 
 
 Enkel de pinnen met de gele labels zoals in bovenste figuur kunnen als digitale uitgangen gebruikt worden, behalve pin 34, 39 en 36 niet. Het maximum aantal is dus 18.
+
+***
+
 Het ontwikkelbord heeft 2 leds aanwezig waarbij de led boven de USB-connecter en naast de aansluiting van de battreij verbonden is met IO-pin 13. Deze kunnen we aansturen van uit de code en kan ingesteld worden als uitgang (1).
 De led onder de USB-connector (2) knippert vanaf dat er voedingsspanning aanwezig is.
 
@@ -101,13 +109,38 @@ void loop()
 
 Natuurlijk is bovenstaand programma onzinnig omdat er drie keer na elkaar wordt gecommandeerd dat de uitgang LAAG moet worden gezet. Eén keer is voldoende om de uitgang LAAG te zetten, en dit blijft zo tot het anders wordt gecommandeerd.
 
+::: details
+Het commando "digitalRead", wat normaal gebruikt wordt bij een digitale input (zie later), kan eigenaardig ook gebruikt worden bij een digitale output. Hierdoor kan volgend programma werken.
+:::
+
+```cpp
+# define LED 13
+void setup()
+{
+    pinMode(LED, OUTPUT);
+}
+void loop()
+{
+    digitalWrite(LED, !(digitalRead(LED)));
+    delay(1000);
+}
+```
+Het uitroepteken wordt bij logische operatoren gebruikt om de digitale toestand te inverteren (0 wordt 1 en/of 1 wordt 0).
 
 
 ***
 
 De meest eenvoudige actuator die kan aangestuurd worden met een digitale ouput pin is een LED.
 
-Een LED is een diode met twee aansluitklemmen (Anode en Kathode) .
+Een LED is een diode met twee aansluitklemmen (Anode en Kathode). Een  LED zal licht afgeven bij volgende voorwaarden:
+> - Anode staat op een positief niveau tov de anode (ongeveer 1,5V) 
+> - De stroom die van Anode naar Kathode vloeit is ongeveer 20mA.  
+
+Voor detail bij een specifieke LED, zoek in datasheet van die LED naar Uf en If.
+
+Door deze twee waarden is het noodzakelijk om een weerstand in serie te plaatsen met de LED.
+
+We kunnen een LED extern plaatsen en aansturen door gebruik te maken van een breadboard.
 
 Op een breadboard kan dan via draadjes verbindingen en schakelingen worden gebouwd. 
 
@@ -116,6 +149,15 @@ Op een breadboard kan dan via draadjes verbindingen en schakelingen worden gebou
 De doorverbindingen van het breadboard ziet er als volgt uit:
 
 ![example image](./images/bb1.png "Doorverbindingen breadboard")
+
+## Aansluiten van een led (hardware)
+
+De meeste standaard leds hebben een werkspanning lager dan 3,3V. Als we de led rechtstreeks aansluiten op de microcontroller zal door de te hoge spanning de stroom door de led te groot worden en zal dit de led beschadigen. In het slechtste geval is de led direct defect.
+Als de stroom groter zal zijn dan 40mA bij de ESP32, dan zal de uitgang van de controller ook beschadigd worden.
+
+Het schema is te zien in de volgende figuur. In het schema wordt er een weerstand gebruikt van 220Ω.
+Gemiddeld staat er over een rode led een spanning van ongeveer 1,6V. Dits wil zeggen dat er over de weerstand een spanning staat van:
+
 
 ### Een verkeerslicht bouwen
 
