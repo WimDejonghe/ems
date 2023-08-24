@@ -39,7 +39,7 @@ Wij gebruiken de huzzah32 feather van Adafruit zoals in volgende figuur is weerg
 ![example image](./images/esp32_2.jpg "De digitale IO-pinnen van de Adafruit Huzzah ESP32 feather")
 
 
-Enkel de pinnen met de gele labels zoals in Figuur 183 kunnen als digitale uitgangen gebruikt worden, behalve pin 34, 39 en 36 niet. Het maximum aantal is dus 18.
+Enkel de pinnen met de gele labels zoals in bovenste figuur kunnen als digitale uitgangen gebruikt worden, behalve pin 34, 39 en 36 niet. Het maximum aantal is dus 18.
 Het ontwikkelbord heeft 2 leds aanwezig waarbij de led boven de USB-connecter en naast de aansluiting van de battreij verbonden is met IO-pin 13. Deze kunnen we aansturen van uit de code en kan ingesteld worden als uitgang (1).
 De led onder de USB-connector (2) knippert vanaf dat er voedingsspanning aanwezig is.
 
@@ -99,9 +99,7 @@ void loop()
 }
 ```
 
-
-
-
+Natuurlijk is bovenstaand programma onzinnig omdat er drie keer na elkaar wordt gecommandeerd dat de uitgang LAAG moet worden gezet. Eén keer is voldoende om de uitgang LAAG te zetten, en dit blijft zo tot het anders wordt gecommandeerd.
 
 De meest eenvoudige actuator die kan aangestuurd worden met een digitale ouput pin is een LED.
 

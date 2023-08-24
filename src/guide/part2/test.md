@@ -68,8 +68,7 @@ De methode ‘Setup’ (2) wordt altijd direct na het opstarten van de controlle
 Na het beëindigen van de Setup-methode wordt de Loop-methode (3) uitgevoerd. De methode wordt constant herhaald tot dat de spanning van de microcontroller wordt verwijderd.
 
 ::: warning
-De setup-methode wordt slachts één keer uitgevoerd bij het starten van een programma.  
-De loop-methode wordt constant herhaald. Oneindige iteratie waarbij de voorwaarde altijd True is.
+De setup-methode wordt slachts één keer uitgevoerd bij het starten van een programma.<br>De loop-methode wordt constant herhaald. Oneindige iteratie waarbij de voorwaarde altijd True is.
 :::
 
 
