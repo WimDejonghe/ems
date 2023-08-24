@@ -66,6 +66,13 @@ altijd toe.
 De eerste lijn code (1) is de aanroep van de Arduino bibliotheek. Deze lijn moet altijd bovenaan het programma staan. De volgende twee blokken zijn methoden die altijd in het project moeten staan.
 De methode ‘Setup’ (2) wordt altijd direct na het opstarten van de controller aangeroepen en de code tussen de accolades wordt dan uitgevoerd.
 Na het beëindigen van de Setup-methode wordt de Loop-methode (3) uitgevoerd. De methode wordt constant herhaald tot dat de spanning van de microcontroller wordt verwijderd.
+
+::: warning
+De setup-methode wordt slachts één keer uitgevoerd bij het starten van een programma.  
+De loop-methode wordt constant herhaald. Oneindige iteratie waarbij de voorwaarde altijd True is.
+:::
+
+
 Een methode heeft altijd een naam. Bij de setup-methode is dit de naam ‘setup’ (1).
 De beide methodes hebben geen parameters die eraan worden meegegeven. Dit kan je zien omdat er geen tekst tussen de haakjes staat (2).
 Een methode kan ook een resultaat teruggeven. Beide methodes geven geen resultaat terug. Dit kan je zien aan het woordje ‘void’ (3). De letterlijke vertaling van void is leegte.
