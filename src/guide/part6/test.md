@@ -6,12 +6,29 @@ De esp32 bezit dus een aantal GPIO (General Purpose Input Output) pinnen. Deze p
 > - Een ingang zal gebruikt worden om door de microcontroller te worden gelezen, hierop zal dus één of andere vorm van sensor of detector worden aangesloten. Meest eenvoudige vorm van zoiets is een drukknop.
 > - Een uitgang zal gebruikt worden om door de microcontroller te worden aangestuurd, hierop zal dus één of andere vorm van actuator worden aangesloten. Meest eenvoudige vorm van zoiets is een LED.
 
-## Digitale ouput
+## Digitale uitgangen
 
 Een kan dus als een uitgang (output) worden ingesteld in de software. Hierdoor kan de software dan die pin logisch 0 of logisch 1 aansturen. 
 
 > - Wanneer een ouput pin logisch 0 is, dan zal de spanning die op die pin aanwezig is, 0V zijn.
 > - Wanneer een ouput pin logisch 1 is, dan zal de spanning die op die pin aanwezig is, 3,3V zijn (= voedingsspanning van de microcontroller).
+
+In digitale systemen worden een aantal termen door elkaar gebruikt om te zeggen dat een toestel aan of uit staat. Deze verschillende termen worden weergegeven in de volgende tabel.
+
+<div class="alert alert-block alert-info">
+<b>Tip:</b> Use blue boxes (alert-info) for tips and notes. 
+If it’s a note, you don’t have to include the word “Note”.
+</div>
+
+| 0V | 3,3V |
+| ----------- |:------------:|
+| Open        | Closed    | 
+| Off    | On           | 
+| Low  | High   |
+| Clear  | Set   |
+| Logic 0  | Logic 1   |
+| False  | True  |
+
 
 De meest eenvoudige actuator die kan aangestuurd worden met een digitale ouput pin is een LED.
 
