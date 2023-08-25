@@ -30,5 +30,7 @@ De shield heeft 4 drukknoppen, 8 leds, een trimmer en een connector om SPI- en I
 
 ![example image](./images/schema.png "De ESP32 shield.")
 
-[Het schema in detail](./shield.pdf){:target="_blank"} 
+[Het schema in detail](./images/shield.pdf){:target="_blank"} 
+
+
 
