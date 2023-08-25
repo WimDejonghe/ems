@@ -123,6 +123,13 @@ module.exports = {
           children: [
             'part9/test',
           ]
+        },
+        {
+          title: 'Extension shield',
+          collapsable: true,
+          children: [
+            'part10/test',
+          ]
         }
       ],      
     }

@@ -82,7 +82,7 @@ double dblTest = -6.8;
 
 ## Karakters en tekst
 
-> - char: Een char is een karakter en is 1 byte groot
+> - char: Een char is een karakter en is 1 byte groot (zie ascii tabel)
 ```cpp
 char chrTest = 'e';
 ```
