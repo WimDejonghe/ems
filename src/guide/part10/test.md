@@ -102,42 +102,42 @@ Opdracht: Maak een programma waarbij de spanning op de analoge ingang A4 (is dit
 Maak gebruik van de ESP32-shield.
 </p>
 <table>
-  <tr>
+  <tr bgcolor="Gray">
     <th>waarde A4</th>
     <th>LED1</th>
     <th>LED2</th>
     <th>LED3</th>
     <th>LED4</th>
   </tr>
-  <tr>
+  <tr bgcolor="DarkGray">
     <td>X<=819 (<=20%)</td>
     <td>0</td>
     <td>0</td>
     <td>0</td>
     <td>0</td>
   </tr>
-  <tr>
+  <tr bgcolor="Gray">
     <td>819 < X <= 1638 <br> 20% < X <= 40%</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
     <td>0</td>
   </tr>
-  <tr>
+  <tr bgcolor="DarkGray">
     <td>1638 < X <= 2457 <br> 40% < X <= 60%</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
   </tr>
-  <tr>
+  <tr bgcolor="Gray">
     <td>2457 < X <= 3276 <br> 60% < X <= 80%</td>
     <td>1</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
   </tr>
-  <tr>
+  <tr bgcolor="DarkGray">
     <td>3276 < X <= 4095 <br> 80% < X <= 100%</td>
     <td>1</td>
     <td>1</td>
