@@ -97,10 +97,17 @@ module.exports = {
           ]
         },
         {
-          title: 'General Purpose IO pinnen',
+          title: 'General Purpose IO pinnen : Output',
           collapsable: true,
           children: [
             'part6/test',
+          ]
+        },
+        {
+          title: 'General Purpose IO pinnen : Input',
+          collapsable: true,
+          children: [
+            'part7/test',
           ]
         }
       ],      
