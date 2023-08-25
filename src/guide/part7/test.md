@@ -205,8 +205,3 @@ Bij de elfde keer drukken gaat de LED weer uit en begint alles opnieuw, 10 keer 
 
 
 
-blz 148/190 ************************************************
-Variabelen op een nieuw doc maken
-
-## PWM
-De ESP32 LED PWM-controller heeft 16 onafhankelijke kanalen die kunnen worden geconfigureerd om PWM-signalen met verschillende eigenschappen te genereren. Alle pinnen die als uitgangen kunnen dienen, kunnen worden gebruikt als PWM-pinnen (GPIO's 34 tot 39 kunnen geen PWM genereren). Hiervoor kan de AnalogWrite (Arduino) worden gebruikt of het ledc-statement (bezit meer mogelijkheden dan analogWrite).

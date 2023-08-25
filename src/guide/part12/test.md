@@ -7,6 +7,8 @@ mathjax:
 
 In dit hoofdstuk wordt uitgelegd wat PWM is en hoe je dit met de ESP32 kan verwezenlijken.
 
+De ESP32 LED PWM-controller heeft 16 onafhankelijke kanalen die kunnen worden geconfigureerd om PWM-signalen met verschillende eigenschappen te genereren. Alle pinnen die als uitgangen kunnen dienen, kunnen worden gebruikt als PWM-pinnen (GPIO's 34 tot 39 kunnen geen PWM genereren). Hiervoor kan de AnalogWrite (Arduino) worden gebruikt of het ledc-statement (bezit meer mogelijkheden dan analogWrite).
+
 ## Werking PWM
 
 PWM is de afkorting van Pulse With Modulation. In het Nederlands heet dit Puls breedte modulatie of beter puls breedte sturing.
@@ -127,12 +129,13 @@ Het schema van de PWM-uitgang is weergegeven en is dezelfde om een LED digitaal 
 Opdracht: Vier drukknoppen die een PWM-uitgang besturen. Maak een programma waarbij de helderheid van de LED7 op de shield gedimd kan worden.
 </p>
 <ul>
-<li>Als op SW1 gedrukt wordt moet de led uit gaan.</li>
-<li>Als op SW2 gedrukt wordt moet de led op 33% van zijn volle lichtsterkte branden.</li>
-<li>Als op SW3 gedrukt wordt moet de led op 66% van zijn volle lichtsterkte branden.</li>
-<li>Als op SW4 gedrukt wordt moet de led op 100% van zijn volle lichtsterkte branden.</li>
+<li style="color:white">Als op SW1 gedrukt wordt moet de led uit gaan.</li>
+<li style="color:white">Als op SW2 gedrukt wordt moet de led op 33% van zijn volle lichtsterkte branden.</li>
+<li style="color:white">Als op SW3 gedrukt wordt moet de led op 66% van zijn volle lichtsterkte branden.</li>
+<li style="color:white">Als op SW4 gedrukt wordt moet de led op 100% van zijn volle lichtsterkte branden.</li>
 </ul>
-Gebruik bij het dimmen een periode T van 10ms. Zorg voor prioriteit op helderheid.
+<p style="color:lightgreen; margin:10px">
+Gebruik bij het dimmen een periode T van 10ms. Zorg voor prioriteit op helderheid.</p>
 </div>
 
 ![example image](./images/oef1.png "ESp32 opstelling met shield.")
