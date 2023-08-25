@@ -109,6 +109,20 @@ module.exports = {
           children: [
             'part7/test',
           ]
+        },
+        {
+          title: 'Variabelen in C',
+          collapsable: true,
+          children: [
+            'part8/test',
+          ]
+        },
+        {
+          title: 'Analoge ingangen',
+          collapsable: true,
+          children: [
+            'part9/test',
+          ]
         }
       ],      
     }
