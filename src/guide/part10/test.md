@@ -109,7 +109,7 @@ Maak gebruik van de ESP32-shield.
     <th>LED3</th>
     <th>LED4</th>
   </tr>
-  <tr bgcolor="DarkGray">
+  <tr bgcolor="DimGray">
     <td>X<=819 (<=20%)</td>
     <td>0</td>
     <td>0</td>
@@ -123,7 +123,7 @@ Maak gebruik van de ESP32-shield.
     <td>0</td>
     <td>0</td>
   </tr>
-  <tr bgcolor="DarkGray">
+  <tr bgcolor="DimGray">
     <td>1638 < X <= 2457 <br> 40% < X <= 60%</td>
     <td>1</td>
     <td>1</td>
@@ -137,7 +137,7 @@ Maak gebruik van de ESP32-shield.
     <td>1</td>
     <td>0</td>
   </tr>
-  <tr bgcolor="DarkGray">
+  <tr bgcolor="DimGray">
     <td>3276 < X <= 4095 <br> 80% < X <= 100%</td>
     <td>1</td>
     <td>1</td>

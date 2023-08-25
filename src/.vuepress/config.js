@@ -130,6 +130,20 @@ module.exports = {
           children: [
             'part10/test',
           ]
+        },
+        {
+          title: 'Analoge uitgangen',
+          collapsable: true,
+          children: [
+            'part11/test',
+          ]
+        },
+        {
+          title: 'PWM uitgangen',
+          collapsable: true,
+          children: [
+            'part12/test',
+          ]
         }
       ],      
     }
