@@ -32,5 +32,11 @@ De shield heeft 4 drukknoppen, 8 leds, een trimmer en een connector om SPI- en I
 
 [Het schema in detail](./images/shield.pdf){:target="_blank"} 
 
+![](./images/shield.pdf)
+
+```{r out.width="100%", out.height="500"}
+knitr::include_graphics('./images/shield.pdf')
+```
+
 
 
