@@ -108,7 +108,105 @@ Als men een IO-pin als ingang wil gebruiken moet men de pinMode van de IO-pin in
 De pinMode van de IO-pin stel je in bij opstart van de controller en dit gebeurt in de setup-methode.
 Aan de methode pinMode worden er twee parameters meegegeven tussen haakjes. De eerste parameter is de IO-pin waarover het gaat en de tweede parameter is hoe deze ingesteld moet worden, hier is dit als ingang. De instructie wordt afgesloten met een puntkomma.
 
+```cpp
+#include <Arduino.h> //bibliotheek nodig voor de pinnamen en ...
+void setup()
+{
+    pinMode(21, INPUT);
+}
+```
+
+Een goede programmeur zal een duidelijker naam willen voor de uitgang en zo weinig mogelijk gebruik maken van de IO-nummers. Daarom gaat men gebruik maken van constanten. De constanten
+declareert men voor de setup routine in het begin van het programma.
+Op lijn 3 is te zien dat de constante de naam ‘DRUKKNOP’ heeft en dat er 21 wordt toegewezen. ‘# define’ geeft weer dat DRUKKNOP gelijk staat aan 13. In de code wordt bij het compileren overal DRUKKNOP vervangen door 21.
+
+```cpp
+#include <Arduino.h> //bibliotheek nodig voor de pinnamen en ...
+#define DRUKKNOP 21
+void setup()
+{
+    pinMode(DRUKKNOP, INPUT);
+}
+```
+
+## digitalRead
+
+Als je de toestand van een ingang wil weten, dan kan je de waarde bekomen door gebruik te maken van digitalRead.
+Hoe je dit kan doen is in de volgende code weergegeven.
+Om een waarde te lezen van een uitgang wordt deze bewaard in een variabele die gedeclareerd is op lijn 8.
+Het lezen van de waarde gebeurt op lijn 9. Dit wordt gedaan met de methode **digitalRead**. Aan de methode wordt de IO-pin waarvan de waarde moet gelezen worden meegegeven. Hier is dit DRUKKNOP en deze is aangesloten op pin 21. Deze methode geeft na uitvoeren een waarde terug. De teruggeven waarde wordt in de variabele intStatusDrukknop geplaatst. De instructie wordt afgesloten met een puntkomma.
+
+```cpp
+#include <Arduino.h> //bibliotheek nodig voor de pinnamen en ...
+#define DRUKKNOP 21 //naam DRUKKNOP verwijst naar 21
+void setup()
+{
+    pinMode(DRUKKNOP, INPUT); //DRUKKNOP instellen als ingang
+    uint8_t intStatusDrukknop; //Declaratie van variabele met 
+                                //naam en type: unsigned 8 bit integer 
+    intStatusDrukknop = digitalRead(DRUKKNOP); //Inlezen status DRUKKNOP en toestand wegschrijven in variabele
+}
+```
+
+## Voorbeeldprogramma digitale ingang
+
+Een voorbeeld om een ingang in te lezen en afhankelijk van de toestand van de drukknop die we verbinden met een digitale ingang zoals volgende code. Als de drukknop is ingedrukt laten we een LED op pin 13 branden. Als de drukknop niet is ingedrukt laten we hem doven.
+
+![example image](./images/code1.png "Een voorbeeldprogramma bij het inlezen van een digitale ingang.")
+
+In het rode kader (1) lezen we de toestand van de digitale ingang die we bij de declaratie hebben ingesteld en die we de naam DRUKKNOP hebben gegeven. Direct in dezelfde lijn controleren we de gelezen waarde als die logisch 0 is.
+
+Als ‘drukknop’ logisch 1 is, staat er een spanning van 3,3V op de ingang en dit komt overeen met een drukknop die niet ingedrukt is omdat we gebruik maken van een drukknop die verbonden is via een pull-up weerstand met de ingang zoals weergegeven in volgende figuur.
+
+![example image](./images/schema6.png "Inlezen van de waarde van een niet ingedrukte drukknop.")
+
+Als de drukknop niet is ingedrukt wordt de led laag gezet door een logisch 0 te sturen waardoor hij niet brandt. Dit is de code in blok (2) van Figuur 233 die wordt uitgevoerd.
+Als de drukknop logisch 0 is, staat er een spanning van 0V op de ingang en dit komt overeen met een drukknop die ingedrukt is omdat we gebruik maken van een drukknop die verbonden is via een pullup weerstand met de ingang zoals weergegeven in volgende figuur.
+
+![example image](./images/schema7.png "Inlezen van de waarde van een ingedrukte drukknop.")
+
+Als de drukknop is ingedrukt wordt de led hoog gezet door een logisch 1 te sturen waardoor hij gaat branden. Dit is de code in blok (3) van vorige code die wordt uitgevoerd.
+
+::: tip
+De ESP32 bezit ook inwendig pull-up en pull-down weerstanden. Deze kunnen geactiveerd worden door pinMode(ingang, INPUT_PULLUP); Dit kan ook met PULLDOWN. Dan moet er uitwendig geen weerstand meer worden geplaatst.
+:::
+
+***
+
+::: warning
+In de labo's wordt altijd met een externe pullup weerstand gewerkt!!.
+:::
+
+***
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht: Digitale ingang blokgolf.
+<ul>
+<li>Als de drukknop niet is ingedrukt moet er een blokgolfspanning op een uitgang gegenereerd worden met een periode van 50Hz met een duty cycle van 50% (Ton = Toff).</li>
+<li>Als de drukknop is ingedrukt moet er een blokgolfspanning op een uitgang gegenereerd worden met een periode van 100Hz met een duty cycle van 50% (Ton = Toff).</li>
+</ul>
+Visualiseer het resultaat met een oscilloscoop.
+</p>
+</div>
+
+***
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht: Digitale ingang tellen.
+<ul>
+<li>Maak een systeem waarbij je het aantal keer telt dat de drukknop is ingedrukt.</li>
+<li>Als de drukknop 10 keer is ingedrukt moet er een led op een uitgang gaan branden.</li>
+</ul>
+Bij de elfde keer drukken gaat de LED weer uit en begint alles opnieuw, 10 keer LED 1 keer aan, ....
+</p>
+</div>
+
+
+
 blz 148/190 ************************************************
+Variabelen op een nieuw doc maken
 
 ## PWM
 De ESP32 LED PWM-controller heeft 16 onafhankelijke kanalen die kunnen worden geconfigureerd om PWM-signalen met verschillende eigenschappen te genereren. Alle pinnen die als uitgangen kunnen dienen, kunnen worden gebruikt als PWM-pinnen (GPIO's 34 tot 39 kunnen geen PWM genereren). Hiervoor kan de AnalogWrite (Arduino) worden gebruikt of het ledc-statement (bezit meer mogelijkheden dan analogWrite).
