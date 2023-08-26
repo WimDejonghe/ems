@@ -129,7 +129,9 @@ void loop()
     delay(1000);
 }
 ```
+::: tip
 Het uitroepteken wordt bij logische operatoren gebruikt om de digitale toestand te inverteren (0 wordt 1 en/of 1 wordt 0).
+:::
 
 
 ***
@@ -181,13 +183,19 @@ IO-pin 21 wordt verbonden met de weerstand van 220Ω. Aan de andere aansluiting 
 
 Op de lijnen 1 t.e.m. 3 wordt er blokcomentaar gegeven wat het programma doet. Blokcommentaar is commentaar over meerdere lijnen en is enkel ter verduidelijking van het programma voor de programmeur of gebruiker van de code. Deze code doet niets aan het werkelijke programma.
 Ieder programma moet de Arduino bibliotheek includen zoals op lijn 4.
+
 Op lijn 6 wordt er een constante LED gedefinieerd met de waarde 21. Bij het compileren van het programma wordt overal in het programma LED vervangen door 21. Het getal 21 geeft de pinnummer aan waarop de led is aangesloten. Dit wordt gedaan omdat een naam gemakkelijker te onthouden is dan een nummer.
+
 Na het opstarten wordt de setup-routine één keer uitgevoerd. In deze routine worden alle instellingen gedaan.
 Op lijn 10 wordt de initialisatie van de communicatie met de seliële monitor gedaan en wordt de snelheid vastgelegd op 115200 bits per seconde. Een instructie wordt altijd afgesloten met een puntkomma.
+
 Op lijn 11 wordt de IO-pin waarop de led is aangesloten ingesteld als een uitgang.
-De loop-methode wordt voortdurend uitgevoerd, startend bij lijn 16 t.e.m. lijn 21 en dan terug van lijn 16, … . De loop-methode wordt in een oneindige lus uitgevoerd. Op lijn 16 wordt de IO-pin waar de led op is aangesloten hoog gemaakt. Omdat de IO-pinnen werken op een spanning van 3,3V wil dit zeggen dat er een spanning op de uitgang wordt gezet van 3,3V en dat de led gaat branden.
+De loop-methode wordt voortdurend uitgevoerd, startend bij lijn 16 t.e.m. lijn 21 en dan terug van lijn 16, … . 
+De loop-methode wordt in een oneindige lus uitgevoerd. Op lijn 16 wordt de IO-pin waar de led op is aangesloten hoog gemaakt. Omdat de IO-pinnen werken op een spanning van 3,3V wil dit zeggen dat er een spanning op de uitgang wordt gezet van 3,3V en dat de led gaat branden.
 Op lijn 17 en lijn 20 wordt er de nodige commentaar naar de seriële monitor gestuurd. De seriële monitor heeft de naam ‘Serial’. Na Serial komt een punt te staan gevolgd door println. Dit wil zeggen dat de methode println wordt uitgevoerd. Println stuurt tekst naar de seriële monitor en plaatst de cursor op het einde op een nieuwe lijn. Wat er wordt verstuurd, wordt tussen haakjes geplaatst. In het programma wordt er enkel tekst verstuurd. Tekst wordt altijd tussen dubbele quotes geplaatst.
+
 Op lijn 18 en 21 wordt de controller 500ms gepauzeerd. De controller pauzeren gebeurt met de methode ‘delay’. Aan de methode wordt 1 parameter meegegeven en is de waarce die gepauzeerd moet worden in milliseconden. Zoals bij iedere instructie wordt deze afgesloten met een punt-comma.
+
 Op lijn 19 wordt de LED gedoofd.
 Door het programma voortdurend na elkaar uit te voeren zal de led voortduren 500ms branden en 500ms doven. Dit zal onze ogen ervaren als het knipperen van de led.
 

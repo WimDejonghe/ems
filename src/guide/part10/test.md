@@ -149,7 +149,9 @@ Maak gebruik van de ESP32-shield.
 
 ***
 
-Bij bepaalde opdrachten kanhet interessant zijn dat een unsigned integer 0-255 (een char type dus) moet omgezet worden naar 8bits. Ziehier een methode die dit voor u kan doen.
+::: tip
+Bij bepaalde opdrachten kan het interessant zijn dat een unsigned integer 0-255 (een char type dus) moet omgezet worden naar 8bits. Ziehier een methode die dit voor u kan doen.
+:::
 
 ```cpp
 void ToonLEDS (unsigned char data)

@@ -72,5 +72,6 @@ Er is nog een externe analoge input:
 
 > * **A13** - dit is een GPI #35 en kan gebruikt worden als analoge input A13. Deze pin bevat een weerstandsdeling die is aangesloten op de VBAT lijn. Op die manier kan de toestand van de batterij worden ingelezen op deze pin.
 
-> **Warning**
-> Houd er rekening mee dat u alleen analoge ingangen op ADC #2 kunt lezen zodra WiFi is gestart, omdat deze wordt gedeeld met de WiFi-module.
+::: warning
+Houd er rekening mee dat u alleen analoge ingangen op ADC #2 kunt lezen zodra WiFi is gestart, omdat deze wordt gedeeld met de WiFi-module.
+:::
