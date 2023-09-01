@@ -147,4 +147,8 @@ Opdracht: Led dimmen met een trimmer. Maak een programma waarbij de helderheid v
 </p>
 </div>
 
+***
+
+The end.
+
 
