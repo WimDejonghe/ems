@@ -28,7 +28,7 @@ digitale ingang D, en een analoge uitgang UO zoals in volgende figuur.
 
 Het uitgangsbereik van de DAC, Vr , is het verschil tussen de Referentie spanning Vref en de minimum spanning die gelijk is aan 0V.
 
-$V_r = V_{ref} - 0V = V_{ref}$
+$$V_r = V_{ref} - 0V = V_{ref}$$
 
 Het specifieke uitgangsbereik wordt meestal gedefinieerd door een vaste spanningsreferentie die aan de DAC wordt aangesloten en zal meestal de voedingsspanning zijn.
 Digitale controlelijnen maken het mogelijk een microcontroller in te stellen en te communiceren met de DAC en zijn dezelfde als bij een ADC.
@@ -36,19 +36,19 @@ De ESP32 heeft een 8bit DAC (d.w.z. n=8) en gebruikt de voedingsspanning van 3,3
 Er zullen dus 2<sup>n</sup> stappen in de DAC-uitgangskarakteristiek zijn, namelijk 256.
 De stapgrootte, of resolutie, is daarom 12,89mV per bit.
 
-$\frac{V_{ref}} {2^n} = \frac{3,3V} {2^8} = \frac{3,3V} {256} = 12,89mV$
+$$\frac{V_{ref}} {2^n} = \frac{3,3V} {2^8} = \frac{3,3V} {256} = 12,89mV$$
 
 De maximale afwijking is 6,45 mV.
 
-$\frac{Stapgrootte} {2} = \frac{12,89mV} {2} = 6,45mV$
+$$\frac{Stapgrootte} {2} = \frac{12,89mV} {2} = 6,45mV$$
 
 Voor elke digitale waarde-invoer naar de DAC, er is een bijhorende analoge uitgangswaarde die berekend wordt met de formule:
 
-$Uo = V_{ref}\frac{D} {2^n}$
+$$Uo = V_{ref}\frac{D} {2^n}$$
 
 Voor de ESP32 controller is dit: 
 
-$Uo = 3,3V.\frac{D} {2^8}=3,3V.\frac{D} {256} = 12,89mV.D$
+$$Uo = 3,3V.\frac{D} {2^8}=3,3V.\frac{D} {256} = 12,89mV.D$$
 
 ## dacWrite
 

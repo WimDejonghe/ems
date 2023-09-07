@@ -63,12 +63,12 @@ Deze weerstand noemt een pull-up weerstand omdat hij de ingang aan de voedingssp
 
 De drukknop heeft twee toestanden. Als hij niet ingedrukt is leest de ingang een hoge spanning. Linkse afbeelding de volgende figuur. De microcontroller zal dit zien als een logische 1 of true.
 
-$I = 0 A$
+$$I = 0 A$$
 
 Als de knop ingedrukt is leest de ingang een lage spanning. Rechtse afbeelding in de volgende figuur.
 De microcontroller zal dit zien als een logische 0 of false.
 
-$I = \frac{U_R} {R} = \frac{3,3V} {10k\Omega}=0,033mA = 330\mu A$
+$$I = \frac{U_R} {R} = \frac{3,3V} {10k\Omega}=0,033mA = 330\mu A$$
 
 Dit is een digitale detector omdat de drukknop maar twee toestanden kan weergeven, namelijk ingedrukt, uit, laag of 0. De andere toestand is niet ingedrukt, aan, hoog of 1.
 
@@ -78,7 +78,7 @@ De reden voor de weerstand R is om geen kortsluiting te veroorzaken als de drukk
 
 ![example image](./images/schema2.png "Aansluiten van een drukknop met een pull-up weerstand.")
 
-$I = \frac{U_R} {R} = \frac{3,3V} {100m\Omega }=33A$
+$$I = \frac{U_R} {R} = \frac{3,3V} {100m\Omega }=33A$$
 
 Zonder weerstand met een gesloten drukknop loopt er een stroom van 33A. 33A is te groot voor de voeding waardoor de voeding defect zal geraken. De draden die de verbinden verzorgen naar de componenten zijn ook veel te dun. Met een stroom van 33A zal de temperatuur van de draden stijgen met als gevolg dat de isolatie en het koper zal smelten.
 

@@ -29,11 +29,11 @@ Bij het gebruik van een PWM signaal zal de frequentie altijd constant blijven!!
 
 Men noemt de duty-cycle de verhouding van de aan-tijd van het signaal ten opzichte van de volledige tijd van de periode, uitgedrukt in procent.
 
-$\delta = \frac{T_{on}} {T}.100\%$
+$$\delta = \frac{T_{on}} {T}.100\%$$
 
 Als je de duty-cycle vermenigvuldigd met de voedingsspanning dan bekom je de gemiddelde uitgangsspanning.
 
-$Uo_{gem} = \delta.Uv$
+$$Uo_{gem} = \delta.Uv$$
 
 PWM-besturing wordt gebruikt in een verscheidenheid aan toepassingen, variërend van communicatie tot automatische besturing. Het dimmen van ledverlichting tot het toerental regelen van een DC-motor, … .
 
@@ -138,7 +138,7 @@ Opdracht: Vier drukknoppen die een PWM-uitgang besturen. Maak een programma waar
 Gebruik bij het dimmen een periode T van 10ms. Zorg voor prioriteit op helderheid.</p>
 </div>
 
-![example image](./images/oef1.png "ESp32 opstelling met shield.")
+![example image](./images/oef1.png "Esp32 opstelling met shield.")
 
 ***
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">

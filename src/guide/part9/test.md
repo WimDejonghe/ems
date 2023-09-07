@@ -47,19 +47,19 @@ Door een analoog signaal om te zetten in een digitaal signaal benaderen we bijna
 Als we een analoog signaal met een bereik van 0V tot 3,3V willen omzetten naar een 8-bits digitaal
 signaal, dan zijn er 256 (d.w.z. 2<sup>8</sup>) verschillende uitgangswaarden. Elke trap heeft een breedte van:
 
-$\frac{3,3V} {256} = 12,89mV$
+$$\frac{3,3V} {256} = 12,89mV$$
 
 De grootste afwijking is de helft van één stap, dus: 
 
-$\frac{12,89mV} {2} = 6,45mV$
+$$\frac{12,89mV} {2} = 6,45mV$$
 
 De ESP32 feather van Adafruit gebruikt een 12 bits ADC. Dit leidt tot een stapbreedte van:
 
-$\frac{3,3V} {2^{12}} = 800µV$
+$$\frac{3,3V} {2^{12}} = 800µV$$
 
 De grootste afwijking is de helft van één stap, dus: 
 
-$\frac{800µV} {2} = 400µV$
+$$\frac{800µV} {2} = 400µV$$
 
 ### Sampling frequentie
 
