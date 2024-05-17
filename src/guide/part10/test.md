@@ -89,7 +89,7 @@ void loop() {
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Maak een programma waarbij de spanning op de analoge ingang A2 wordt gelezen en doorgestuurd wordt naar een seriële monitor op de PC.</br>
+Opdracht1: Maak een programma waarbij de spanning op de analoge ingang A2 wordt gelezen en doorgestuurd wordt naar een seriële monitor op de PC.</br>
 Sluit een potentiometer aan op de analoge ingang A2 via een breadbord.
 </p>
 </div>
@@ -98,7 +98,7 @@ Sluit een potentiometer aan op de analoge ingang A2 via een breadbord.
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Maak een programma waarbij de spanning op de analoge ingang A4 (is dit hetzelfde als pin36?, zoek dit op) wordt gelezen en 4 leds stuurt afhankelijk van de gemeten waarde volgens onderstaande tabel</br>
+Opdracht2: Maak een programma waarbij de spanning op de analoge ingang A4 (is dit hetzelfde als pin36?, zoek dit op) wordt gelezen en 4 leds stuurt afhankelijk van de gemeten waarde volgens onderstaande tabel</br>
 Maak gebruik van de ESP32-shield.
 </p>
 <table>
@@ -177,7 +177,7 @@ else    { digitalWrite(led1, LOW);}      //Reset LED1
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Zorg dat je met voorgaande methode een analoge ingang inleest, en dat die waarde binair wordt weergegeven op de 8 LEDS.
+Opdracht3: Zorg dat je met voorgaande methode een analoge ingang inleest, en dat die waarde binair wordt weergegeven op de 8 LEDS.
 </p>
 </div>
 
@@ -185,7 +185,7 @@ Opdracht: Zorg dat je met voorgaande methode een analoge ingang inleest, en dat 
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Oef1 : Knipperen van een LED vlug - traag op basis van toestand van een digitale input.
+Opdracht4: Knipperen van een LED vlug - traag op basis van toestand van een digitale input.
 </p>
 </div>
 
@@ -193,7 +193,7 @@ Opdracht: Oef1 : Knipperen van een LED vlug - traag op basis van toestand van ee
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Oef2 : Laat een LED bij de start 10 keer snel knipperen en daarna oneindig keer op een lage snelheid knipperen
+Opdracht5: Laat een LED bij de start 10 keer snel knipperen en daarna oneindig keer op een lage snelheid knipperen
 </p>
 </div>
 
@@ -201,7 +201,7 @@ Opdracht: Oef2 : Laat een LED bij de start 10 keer snel knipperen en daarna onei
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Oef3 : Laat een LED knipperen met een oplopende snelheid (repetitief). Als dit werkt, bij max snelheid terug aflopende snelheid en dit ook repetitief. 
+Opdracht6: Laat een LED knipperen met een oplopende snelheid (repetitief). Als dit werkt, bij max snelheid terug aflopende snelheid en dit ook repetitief. 
 </p>
 </div>
 
@@ -209,7 +209,7 @@ Opdracht: Oef3 : Laat een LED knipperen met een oplopende snelheid (repetitief).
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Oef4 : Wat is de minimum delay tijd bij het knipperen van een LED zodat we het net niet meer kunnen waarnemen. Wat is dan de knipperfrequentie en wat is de knipperperiode? Meet met de oscilloscoop. Bereken en bepaal het verband met uw delay tijden. 
+Opdracht7: Wat is de minimum delay tijd bij het knipperen van een LED zodat we het net niet meer kunnen waarnemen. Wat is dan de knipperfrequentie en wat is de knipperperiode? Meet met de oscilloscoop. Bereken en bepaal het verband met uw delay tijden. 
 </p>
 </div>
 
@@ -217,7 +217,7 @@ Opdracht: Oef4 : Wat is de minimum delay tijd bij het knipperen van een LED zoda
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
-Opdracht: Oef5 : Wijzig bij het onzichtbaar knipperen (door de hoge knipperfrequentie) de AAN-tijd tot 10% van de knipperperiode. Wat is dit in seconden? wat is dan de UIT-tijd in seconden? Let wel de knipperfrequentie mag niet wijzigen. Meet met de oscilloscoop. Bereken en bepaal het verband met uw delay tijden. 
+Opdracht8: Wijzig bij het onzichtbaar knipperen (door de hoge knipperfrequentie) de AAN-tijd tot 10% van de knipperperiode. Wat is dit in seconden? wat is dan de UIT-tijd in seconden? Let wel de knipperfrequentie mag niet wijzigen. Meet met de oscilloscoop. Bereken en bepaal het verband met uw delay tijden. 
 </p>
 </div>
 
