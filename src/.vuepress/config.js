@@ -146,6 +146,13 @@ module.exports = {
           children: [
             'part12/test',
           ]
+        },
+        {
+          title: 'Logische poorten',
+          collapsable: true,
+          children: [
+            'part13/test',
+          ]
         }
       ],      
     }
